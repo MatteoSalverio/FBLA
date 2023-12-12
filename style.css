@@ -199,11 +199,11 @@ navMenu a:hover {
 .pageCoverContent {
     position: absolute;
     top: 40%;
-    left: 12%;
+    left: 5%;
     width: 85%;
     color: white;
     font-size: 7vh;
-    text-shadow: 0.4vh 0.4vh 0.4vh black;
+    text-shadow: 0.4vh 0.4vh 0.4vh rgba(0, 0, 0, 0.5);
     animation: slideFromLeft 1s ease;
 }
 
@@ -345,6 +345,7 @@ input[type=submit]:active,
 
 footer {
     background-color: rgb(40, 40, 40);
+    overflow: hidden;
 }
 
 .footerContainer {

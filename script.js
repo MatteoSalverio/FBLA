@@ -62,8 +62,11 @@ function toggleNavMenu() {
 }
 
 document.addEventListener("click", function (e) {
-    // CHECK if the click was not on the button and hide the nav menu
-    //setTimeout(function () { navMenu.style.visibility = "hidden"; }, 750);
+    // Check if the click was not on the button and hide the nav menu
+    if (e.target.classList[0] != "preventClose") {
+        if (navMenu.style.visibility != "hidden")
+            toggleNavMenu();
+    }
 });
 
 function resize() {
