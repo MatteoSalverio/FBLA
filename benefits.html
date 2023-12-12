@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits | Chick-fil-A</title>
+    <link rel="icon" href="resources/media/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            color: black;
+            font-family: ApercuBold;
+            font-size: 2.5vh;
+        }
+
+        #halloweenImage {
+            width: 50%;
+            border-radius: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="resources/media/CfaLogo.png" onclick="window.open('/', '_self')">
+        <nav>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+        <navButton onclick="toggleNavMenu()"><img src="resources/media/menu.svg"></navButton>
+        <navMenu style="visibility: hidden;">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </navMenu>
+    </header>
+
+    <div class="pageCover parallax">
+        <div class="pageCoverContent">
+            <h1 style="color: white;">Why Work With Us?</h1>
+            <button onclick="window.open('#learnMore', '_self')">Learn More</button>
+        </div>
+    </div>
+
+    <div class="pageBody">
+        <h1>Employee Value Proposition</h1>
+        <p>Working at Chick-fil-A Fourth Street is more than just a job, it’s a place where you can make a difference
+            every day, while growing as a person and a professional.</p>
+        <br>
+        <h2>Our Purpose</h2>
+        <p id="learnMore">To make St. Petersburg a better place.</p>
+        <br>
+        <img id="halloweenImage" class="shadow" src="resources/media/Halloween.JPG">
+        <br>
+        <h2>Employee Benefits</h2>
+        <div class="quadColumnContainer">
+            <div class="quadColumn">
+                <img src="resources/media/BlueCalendarIcon.png">
+                <h4>FLEXIBILITY</h4>
+                <content>Whether our team members are involved in athletics, in community
+                    service, or just need some family
+                    time, we value flexibility of schedule for our team. We are closed on Sundays to allow our team
+                    members to rest and enjoy time with family and friends.</content>
+            </div>
+            <div class="quadColumn">
+                <img src="resources/media/BlueDollarSignIcon.png">
+                <h4>COMPETITIVE PAY</h4>
+                <content>We value your contribution to our organization and provide
+                    competitive compensation within the hospitality industry. Furthermore, we encourage employees to
+                    take initiative in their own advancement through extraordinary work ethic and leadership
+                    demonstration.</content>
+            </div>
+            <div class="quadColumn">
+                <img src="resources/media/BlueUpwardArrowsIcon.png">
+                <h4>GROWTH AND DEVELOPMENT</h4>
+                <content>We value advancement via performance reviews, the opportunity to earn leadership
+                    responsibilities and the opportunity to enter into mentoring relationships with leaders.</content>
+            </div>
+            <div class="quadColumn">
+                <img src="resources/media/BlueGroupOfPeopleIcon.png">
+                <h4>CAREER OPPORTUNITIES</h4>
+                <content>We promise the opportunity to educate and assist our team members in career opportunities which
+                    include, but are not limited to, Franchisee, Support Center Staff, contracting with Chick-fil-A and
+                    long-term career opportunities with RRM.</content>
+            </div>
+        </div>
+        <br><br><br>
+        <p style="color: black;">Plus, employees may be eligible for the following benefits:</p>
+        <ul>
+            <li>Employee meals</li>
+            <li>Catering discounts</li>
+            <li>Health insurance</li>
+            <li>Paid time off</li>
+            <li>College scholarships</li>
+            <li>Performance incentives and more!</li>
+        </ul>
+        <br><br>
+        <button
+            style="position: relative; left: 50%; transform: translateX(-50%); color: white; background-color: var(--Chick-fil-A-Red);"
+            onclick="window.open('apply.html', '_self')">Apply Now</button>
+        <br><br>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold;">Connect With Us</p>
+        <br>
+        <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
+        <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
+                Petersburg, FL 33703</a></p>
+        <p>727-502-9402</p>
+        <br>
+        <p>© 2023 Chick-fil-A Fourth Street</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

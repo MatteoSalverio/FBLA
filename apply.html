@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | Chick-fil-A</title>
+    <link rel="icon" href="resources/media/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            color: black;
+            font-family: ApercuBold;
+            font-size: 2.5vh;
+        }
+
+        input,
+        select,
+        form button {
+            width: 100%;
+        }
+
+        select {
+            width: 103.5%;
+        }
+
+        .submitButton {
+            font-family: Apercu;
+            color: black;
+            font-size: 2vh;
+            padding: 1vh 4vh 1vh 4vh;
+            border: solid 2px black;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+            background-color: var(--Blue);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="resources/media/CfaLogo.png" onclick="window.open('/', '_self')">
+        <nav>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+        <navButton onclick="toggleNavMenu()"><img src="resources/media/menu.svg"></navButton>
+        <navMenu style="visibility: hidden;">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </navMenu>
+    </header>
+
+    <div class="pageCover parallax" style="background-image: url('resources/media/Halloween.JPG');">
+        <div class="pageCoverContent">
+            <h1 style="color: white;">Your Future Starts Today</h1>
+            <button onclick="window.open('#applyNow', '_self')">Apply Below</button>
+        </div>
+    </div>
+
+    <div id="applyNow" class="pageBody">
+        <div>
+            <h2 style="text-decoration: underline; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25); text-align: center;">
+                Please Provide the
+                Following:</h2>
+            <br>
+            <div class="formInput">
+                <h3>Job You're Applying For</h3>
+                <br>
+                <select>
+                    <option>Front of House</option>
+                    <option>Back of House</option>
+                </select>
+                <br><br>
+                <h3>First Name</h3>
+                <input type="text" placeholder="First Name" required>
+                <br><br>
+                <h3>Last Name</h3>
+                <input type="text" placeholder="Last Name" required>
+                <br><br>
+                <h3>Email</h3>
+                <input type="email" placeholder="Email" required>
+                <br><br>
+                <h3>Phone Number</h3>
+                <input type="tel" placeholder="Phone Number" required>
+                <br><br><br><br>
+                <button class="submitButton">Submit</button>
+                <br><br>
+            </div>
+            <br><br><br>
+        </div>
+        <br><br><br>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold;">Connect With Us</p>
+        <br>
+        <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
+        <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
+                Petersburg, FL 33703</a></p>
+        <p>727-502-9402</p>
+        <br>
+        <p>© 2023 Chick-fil-A Fourth Street</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chick-fil-A</title>
+    <link rel="icon" href="resources/media/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #whoWeAre {
+            position: absolute;
+            top: 40%;
+            left: 12%;
+            color: white;
+            font-size: 8vh;
+            text-shadow: 4px 4px 5px black;
+        }
+
+        #mapLocation {
+            border: solid 0.5vh var(--Dark-Gray);
+            border-radius: 2vh;
+            box-shadow: 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.25);
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="resources/media/CfaLogo.png" onclick="window.open('/', '_self')">
+        <nav>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+        <navButton onclick="toggleNavMenu()"><img src="resources/media/menu.svg"></navButton>
+        <navMenu style="visibility: hidden;">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </navMenu>
+    </header>
+
+    <div class="pageCover parallax">
+        <h1 class="pageCoverContent" id="whoWeAre" style="color: white;">Who We Are</h1>
+    </div>
+
+    <div class="pageBody">
+        <h1 style="color: var(--Navy);">Our Leadership</h1>
+        <p>For over 25 years, David Neely has been honored to serve the St. Petersburg community as Owner/Operator of
+            Chick-fil-A 4th Street North. A third generation native of St. Petersburg, David started his Chick-fil-A
+            career
+            at the age of 25; one of the youngest to be selected as a franchise owner. With his vision to bring the
+            Chick-fil-A free standing concept to St. Petersburg, David opened up his 4th Street restaurant in March
+            1999;
+            the first in Pinellas County and St. Petersburg.
+            <br><br>
+            Throughout the years, his hard work and passion for hospitality has awarded him the Chick-fil-A, Inc. Symbol
+            of
+            Success, Chick-fil-A’s highest honor for an Operator, recognizing those who successfully achieve aggressive
+            sales goals.
+            <br><br>
+            While David’s role serves as the CEO; providing Vision, Clarity and Focus, he prefers to spend his time
+            serving
+            his team and community through mentorship and leadership development. His goal is to help Team Members
+            achieve
+            their goals. He is passionate about using his resources to serve the St. Petersburg community, making it a
+            wonderful place to live and work.
+            <br><br>
+            Outside of work, David enjoys reading, classic movies, golf, running and travel. A perfect day for David is
+            spending time with his wife Michelle, their three adult children and Bates Neely (The Worlds Best Labrador).
+        </p>
+        <br><br>
+        <h1 style="color: var(--Navy);">Where to Find Us</h1>
+        <p>Come visit us at <a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8">4241 4th Street N, Saint Petersburg, FL
+                33703</a></p>
+        <iframe id="mapLocation"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3528.9620994650545!2d-82.64082272341979!3d27.810937476123318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e15008805577%3A0xc922e862d42349b1!2s4241%204th%20St%20N%2C%20St.%20Petersburg%2C%20FL%2033703!5e0!3m2!1sen!2sus!4v1702306132682!5m2!1sen!2sus"
+            width="600" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold;">Connect With Us</p>
+        <br>
+        <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
+        <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
+                Petersburg, FL 33703</a></p>
+        <p>727-502-9402</p>
+        <br>
+        <p>© 2023 Chick-fil-A Fourth Street</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

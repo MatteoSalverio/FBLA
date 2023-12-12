@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chick-fil-A</title>
+    <link rel="icon" href="resources/media/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            margin-bottom: 0.75vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="resources/media/CfaLogo.png" onclick="window.open('/', '_self')">
+        <nav>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+        <navButton onclick="toggleNavMenu()"><img src="resources/media/menu.svg"></navButton>
+        <navMenu style="visibility: hidden;">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="jobOpenings.html">Job Openings</a>
+            <a href="apply.html">Apply</a>
+        </navMenu>
+    </header>
+
+    <div class="pageCover parallax">
+        <h1 class="pageCoverContent" id="whoWeAre" style="color: white;">Job Openings</h1>
+    </div>
+
+    <div class="pageBody">
+        <h1 style="color: var(--Navy);">Not sure what you want to do?</h1>
+        <h2 style="color: var(--Dark-Gray);">Don't worry, we can help you!</h2>
+        <p>Chick-fil-A has a wide range of available jobs. From working in the kitchen, to playing the role of our
+            beloved mascot; we will find the perfect fit for you.</p>
+        <br>
+        <h2>Front of House</h2>
+        <p>In the front of house position, you will be the face of Chick-fil-A. You will be frequently interacting with
+            our customers, and ensuring that they have the best experience possible. We have a vision that primarily
+            involves hospitality, and it is up to you to make it happen.</p>
+        <h2>Back of House</h2>
+        <p>In the back of house position, you will help to create the meals that people love, and ensure high quality
+            for every customer. Employees in this position will not directly interact with customers as much, but they
+            still have a major impact on the overall customer experience.</p>
+        <h2>Third Position</h2>
+        <p>Information about the position here.</p>
+        <br><br>
+        <button onclick="window.open('apply.html', '_self')">Apply Now</button>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold;">Connect With Us</p>
+        <br>
+        <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
+        <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
+                Petersburg, FL 33703</a></p>
+        <p>727-502-9402</p>
+        <br>
+        <p>© 2023 Chick-fil-A Fourth Street</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
