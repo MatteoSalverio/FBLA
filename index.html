@@ -3,33 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Chick-fil-A</title>
     <link rel="icon" href="resources/media/logo.png">
     <link rel="stylesheet" href="style.css">
 
     <style>
-        #whoWeAre {
-            position: absolute;
-            top: 40%;
-            left: 12%;
-            color: white;
-            font-size: 8vh;
-            text-shadow: 4px 4px 5px black;
-        }
-
         #mapLocation {
             border: solid 0.5vh var(--Dark-Gray);
             border-radius: 2vh;
             box-shadow: 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.25);
-            width: 60%;
+            width: 80%;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="resources/media/CfaLogo.png" onclick="window.open('/', '_self')">
+        <img src="resources/media/CfaLogo.png" onclick="window.open('index.html', '_self')">
         <nav>
             <a href="benefits.html">Benefits</a>
             <a href="jobOpenings.html">Job Openings</a>
@@ -84,14 +78,16 @@
     </div>
 
     <footer>
-        <p style="font-weight: bold;">Connect With Us</p>
-        <br>
-        <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
-        <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
-                Petersburg, FL 33703</a></p>
-        <p>727-502-9402</p>
-        <br>
-        <p>© 2023 Chick-fil-A Fourth Street</p>
+        <div class="footerContainer">
+            <p style="font-weight: bold;">Connect With Us</p>
+            <br>
+            <p style="font-weight: bold;">Chick-fil-A Fourth Street</p>
+            <p><a href="https://maps.app.goo.gl/dsSa2n4pFTrSA3Va8" style="color: white;">4241 4th Street N, Saint
+                    Petersburg, FL 33703</a></p>
+            <p>727-502-9402</p>
+            <br>
+            <p>© 2023 Chick-fil-A Fourth Street</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
