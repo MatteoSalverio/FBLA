@@ -6,10 +6,16 @@ document.addEventListener("scroll", function () {
     onScroll();
 });
 
+let lastY = 0;
 function onScroll() {
     changeHeaderColor();
-    for (let i = 0; i < parallaxElements.length; i++)
-        parallaxElements[i].style.backgroundPositionY = `${window.scrollY * 0.25 - 200}px`;
+    let y = window.scrollY;
+    let diff = y - lastY;
+    for (let i = 0; i < parallaxElements.length; i++) {
+        let startPos = parallaxElements[i].style.backgroundPositionY.replace("px", "") * 1;
+        parallaxElements[i].style.backgroundPositionY = `${startPos + (diff * 0.35)}px`;
+    }
+    lastY = y;
 }
 onScroll();
 
