@@ -438,3 +438,19 @@ li {
     font-size: 2vh;
     color: var(--Dark-Gray);
 }
+
+.buttonLink {
+    background-color: var(--Navy);
+    color: white;
+    padding: 2vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.buttonLink:hover {
+    filter: brightness(150%);
+    color: white;
+}

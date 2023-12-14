@@ -22,7 +22,7 @@
         }
 
         select {
-            width: 103.5%;
+            width: 100%;
         }
 
         .submitButton {
@@ -82,23 +82,23 @@
                 </select>
                 <br><br>
                 <h3>Full Name</h3>
-                <input type="text" placeholder="Full Name" required>
+                <input id="nameInput" type="text" placeholder="Full Name" required>
                 <br><br>
                 <h3>Email</h3>
-                <input type="email" placeholder="Email" required>
+                <input id="emailInput" type="email" placeholder="Email" required>
                 <br><br>
                 <h3>Phone Number</h3>
-                <input type="tel" placeholder="Phone Number" required>
+                <input id="phoneInput" type="tel" placeholder="Phone Number" required>
                 <br><br>
                 <h3>Why do you want to work here?</h3>
-                <textarea></textarea>
+                <textarea id="infoInput" placeholder="Tell us about yourself!"></textarea>
                 <br><br>
                 <h3>Submit your resume here:</h3>
-                <input type="file">
+                <input id="resumeInput" type="file">
                 <br><br><br><br>
                 <div style="text-align: center;">
-                    <p style="visibility: unset; margin: 0; margin-bottom: 2vh; color: var(--Chick-fil-A-Red);">Please fill out all fields!</p>
-                    <button class="submitButton">Submit Application</button>
+                    <p id="fieldAlert" style="visibility: hidden; margin: 0; margin-bottom: 2vh; color: var(--Chick-fil-A-Red);">Please fill out all fields!</p>
+                    <button class="submitButton" style="font-size: 3vh;" onclick="submit();">Submit Application</button>
                 </div>
                 <br><br>
             </div>
@@ -121,6 +121,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function submit() {
+            let nameInput = document.getElementById("nameInput");
+            let emailInput = document.getElementById("emailInput");
+            let phoneInput = document.getElementById("phoneInput");
+            let infoInput = document.getElementById("infoInput");
+            let resumeInput = document.getElementById("resumeInput");
+            if (nameInput.value == "" || emailInput.value == "" || phoneInput.value == "" || infoInput.value == "" || resumeInput.value == "") {
+                document.getElementById("fieldAlert").style.visibility = "unset";
+            }
+            else {
+                window.open("thankYou.html", "_self");
+            }
+        }
+    </script>
 </body>
 
 </html>
