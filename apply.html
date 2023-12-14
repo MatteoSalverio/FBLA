@@ -46,18 +46,20 @@
         <nav>
             <a href="benefits.html">Benefits</a>
             <a href="jobOpenings.html">Job Openings</a>
-            <a href="apply.html">Apply</a>
+            <a href="apply.html" class="currentPage">Apply</a>
         </nav>
-        <navButton class="preventClose" onclick="toggleNavMenu()"><img class="preventClose" src="resources/media/menu.svg"></navButton>
+        <navButton class="preventClose" onclick="toggleNavMenu()"><img class="preventClose"
+                src="resources/media/menu.svg"></navButton>
         <navMenu style="visibility: hidden;">
             <a href="index.html">Home</a>
             <a href="benefits.html">Benefits</a>
             <a href="jobOpenings.html">Job Openings</a>
-            <a href="apply.html">Apply</a>
+            <a href="apply.html" class="currentPage">Apply</a>
         </navMenu>
     </header>
 
-    <div class="pageCover parallax" style="background-image: url('resources/media/frontCounter.jpg'); background-position-x: center;">
+    <div class="pageCover parallax"
+        style="background-image: url('resources/media/frontCounter.jpg'); background-position-x: center;">
         <div class="pageCoverContent">
             <h1 style="color: white;">Your Future Starts Today</h1>
             <button onclick="window.open('#applyNow', '_self')">Apply Below</button>
@@ -79,19 +81,25 @@
                     <option>Team Member</option>
                 </select>
                 <br><br>
-                <h3>First Name</h3>
-                <input type="text" placeholder="First Name" required>
-                <br><br>
-                <h3>Last Name</h3>
-                <input type="text" placeholder="Last Name" required>
+                <h3>Full Name</h3>
+                <input type="text" placeholder="Full Name" required>
                 <br><br>
                 <h3>Email</h3>
                 <input type="email" placeholder="Email" required>
                 <br><br>
                 <h3>Phone Number</h3>
                 <input type="tel" placeholder="Phone Number" required>
+                <br><br>
+                <h3>Why do you want to work here?</h3>
+                <textarea></textarea>
+                <br><br>
+                <h3>Submit your resume here:</h3>
+                <input type="file">
                 <br><br><br><br>
-                <button class="submitButton">Submit</button>
+                <div style="text-align: center;">
+                    <p style="visibility: unset; margin: 0; margin-bottom: 2vh; color: var(--Chick-fil-A-Red);">Please fill out all fields!</p>
+                    <button class="submitButton">Submit Application</button>
+                </div>
                 <br><br>
             </div>
             <br><br><br>

@@ -85,6 +85,11 @@ header nav a:hover {
     color: var(--Chick-fil-A-Red);
 }
 
+.currentPage {
+    color: var(--Dark-Red);
+    text-decoration: none;
+}
+
 /* Toggles Nav Menu, visible only to mobile users */
 navButton {
     background-color: rgba(255, 255, 255, 1);
@@ -267,6 +272,7 @@ button:active {
 }
 
 input,
+textarea,
 select {
     font-family: Apercu;
     color: black;
@@ -276,6 +282,7 @@ select {
     border-radius: 6px;
     outline: none;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    width: 100%;
     transition: box-shadow 0.3s ease;
 }
 
