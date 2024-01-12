@@ -2,10 +2,11 @@ let header = document.getElementsByTagName("header")[0];
 let parallaxElements = document.getElementsByClassName("parallax");
 let navMenu = header.getElementsByTagName("navMenu")[0];
 
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function () { // Checks for scrolling
     onScroll();
 });
 
+// Manages the parallax effect on all parallax class elements
 let lastY = 0;
 function onScroll() {
     changeHeaderColor();
@@ -19,6 +20,7 @@ function onScroll() {
 }
 onScroll();
 
+// Changes opacity of the header element based on how far down you are on the page
 function changeHeaderColor() {
     if (window.scrollY > 20)
         header.style.backgroundColor = "var(--Warm-White)";
@@ -26,6 +28,7 @@ function changeHeaderColor() {
         header.style.backgroundColor = "var(--Warm-White-Transparent)";
 }
 
+// Changes the orientation of the columns on pages based on the width of the screen to keep content visisble
 let quadColumnContainers = document.getElementsByClassName("quadColumnContainer");
 let quadColumns = document.getElementsByClassName("quadColumn");
 function setColumsToVertical() {
@@ -41,6 +44,7 @@ function setColumsToHorizontal() {
         quadColumns[i].style.width = "20%";
 }
 
+// Shrinks the nav menu in the header down to a button that toggles a menu
 function compressNav(isCompressed) {
     if (isCompressed) {
         header.getElementsByTagName("nav")[0].style.visibility = "hidden";
@@ -52,6 +56,7 @@ function compressNav(isCompressed) {
     }
 }
 
+// Toggles the visibility of the navigation menu
 function toggleNavMenu() {
     if (navMenu.style.visibility == "hidden") { // Show Nav Menu
         navMenu.style.visibility = "unset";
@@ -67,6 +72,7 @@ function toggleNavMenu() {
     }
 }
 
+// Closes the nav menu when you click somewhere else
 document.addEventListener("click", function (e) {
     // Check if the click was not on the button and hide the nav menu
     if (e.target.classList[0] != "preventClose") {
@@ -75,6 +81,7 @@ document.addEventListener("click", function (e) {
     }
 });
 
+// Runs all compresstion actions when the screen width is smaller than 1000px
 function resize() {
     if (window.innerWidth <= 1000) {
         setColumsToVertical();
