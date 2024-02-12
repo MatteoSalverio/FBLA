@@ -1,0 +1,72 @@
+/* Toggles Nav Menu, visible only to mobile users */
+navButton {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    height: 60%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 1vh;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+/* Icon inside the navButton */
+navButton img {
+    width: 60%;
+    opacity: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+navButton:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+navButton:active {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Compressed side menu for navigation */
+navMenu {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    width: 45%;
+    top: 100%;
+    right: 2%;
+    padding: 1vh;
+    z-index: 1;
+    border: solid 2px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 6px 6px;
+}
+
+navMenu a {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    width: 89%;
+    font-size: 3vh;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: color 0.2s ease;
+    box-shadow: 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+navMenu a:hover {
+    /*filter: brightness(150%);*/
+    color: var(--Chick-fil-A-Red);
+}
+
+/* The link to the current page on the header */
+.currentPage {
+    color: var(--Dark-Red);
+    text-decoration: none;
+}
