@@ -131,14 +131,12 @@
 
 
         const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-
-        // Check if any question is unanswered
+            
         if (radioButtons.length !== 7) {
             alert('Please answer all questions before submitting.');
             return;
         }
 
-        // Initialize variables to store the total score for each category
         let appeal = 0;
         let describes = 0;
         let Skills = 0;
@@ -147,7 +145,6 @@
         let food = 0;
         let sause = 0;
 
-        // Loop through the selected radio buttons and calculate scores
         radioButtons.forEach(radio => {
             const value = radio.value;
             switch (radio.name) {
@@ -177,7 +174,6 @@
             if(appeal)
             
         function getScore(answer) {
-        // Customize this function based on your scoring system
         switch (answer) {
             case 'a':
                 return 1;
