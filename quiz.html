@@ -130,73 +130,72 @@
             }
 
 
-        const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-            
-        if (radioButtons.length !== 7) {
-            alert('Please answer all questions before submitting.');
-        }
+            const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
 
-        let appeal = 0;
-        let describes = 0;
-        let Skills = 0;
-        let Culture = 0;
-        let Scedule = 0;
-        let food = 0;
-        let sause = 0;
-
-        radioButtons.forEach(radio => {
-            const value = radio.value;
-            switch (radio.name) {
-                case 'q1':
-                    appeal += getScore(value);
-                    break;
-                case 'q2':
-                    describes += getScore(value);
-                    break;
-                case 'q3':
-                    Skills += getScore(value);
-                    break;
-                case 'q4':
-                    Culture += getScore(value);
-                    break;
-                case 'q5':
-                    Scedule += getScore(value);
-                    break;
-                case 'q6':
-                    food += getScore(value);
-                    break;
-                case 'q7':
-                    sause += getScore(value);
-                    break;
+            if (radioButtons.length !== 7) {
+                alert('Please answer all questions before submitting.');
             }
-        });
-            if(appeal == 1 && describes == 1){
+
+            let appeal = 0;
+            let describes = 0;
+            let Skills = 0;
+            let Culture = 0;
+            let Scedule = 0;
+            let food = 0;
+            let sause = 0;
+
+            radioButtons.forEach(radio => {
+                const value = radio.value;
+                switch (radio.name) {
+                    case 'q1':
+                        appeal += getScore(value);
+                        break;
+                    case 'q2':
+                        describes += getScore(value);
+                        break;
+                    case 'q3':
+                        Skills += getScore(value);
+                        break;
+                    case 'q4':
+                        Culture += getScore(value);
+                        break;
+                    case 'q5':
+                        Scedule += getScore(value);
+                        break;
+                    case 'q6':
+                        food += getScore(value);
+                        break;
+                    case 'q7':
+                        sause += getScore(value);
+                        break;
+                }
+            });
+            if (appeal == 1 && describes == 1) {
                 //output font of house job
             }
-            else if(appeal == 2 && describes == 2 && Skills == 2){
+            else if (appeal == 2 && describes == 2 && Skills == 2) {
                 //output back of house
             }
-            else{
+            else {
                 //output team leader 
             }
-            
-        function getScore(answer) {
-        switch (answer) {
-            case 'a':
-                return 1;
-            case 'b':
-                return 2;
-            case 'c':
-                return 3;
-            case 'd':
-                return 4;
-            case 'e':
-                return 5;
-            default:
-                return 0;
-        }
-    }
-    }
+
+            function getScore(answer) {
+                switch (answer) {
+                    case 'a':
+                        return 1;
+                    case 'b':
+                        return 2;
+                    case 'c':
+                        return 3;
+                    case 'd':
+                        return 4;
+                    case 'e':
+                        return 5;
+                    default:
+                        return 0;
+                }
+            }
         </script>
     </div>
 
