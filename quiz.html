@@ -40,6 +40,10 @@
 
         <div id="quiz"></div>
 
+        <br><br>
+
+        <button onclick="submitAnswers()">Submit</button>
+
         <script>
             const quizContainer = document.getElementById("quiz");
             let quiz = {
@@ -129,56 +133,17 @@
                 }
             }
 
-
-            const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-
-            if (radioButtons.length !== 7) {
+            /*if (radioButtons.length !== 7) {
                 alert('Please answer all questions before submitting.');
-            }
+            }*/
 
             let appeal = 0;
             let describes = 0;
-            let Skills = 0;
-            let Culture = 0;
-            let Scedule = 0;
+            let skills = 0;
+            let culture = 0;
+            let schedule = 0;
             let food = 0;
-            let sause = 0;
-
-            radioButtons.forEach(radio => {
-                const value = radio.value;
-                switch (radio.name) {
-                    case 'q1':
-                        appeal += getScore(value);
-                        break;
-                    case 'q2':
-                        describes += getScore(value);
-                        break;
-                    case 'q3':
-                        Skills += getScore(value);
-                        break;
-                    case 'q4':
-                        Culture += getScore(value);
-                        break;
-                    case 'q5':
-                        Scedule += getScore(value);
-                        break;
-                    case 'q6':
-                        food += getScore(value);
-                        break;
-                    case 'q7':
-                        sause += getScore(value);
-                        break;
-                }
-            });
-            if (appeal == 1 && describes == 1) {
-                //output font of house job
-            }
-            else if (appeal == 2 && describes == 2 && Skills == 2) {
-                //output back of house
-            }
-            else {
-                //output team leader 
-            }
+            let sauce = 0;
 
             function getScore(answer) {
                 switch (answer) {
@@ -194,6 +159,50 @@
                         return 5;
                     default:
                         return 0;
+                }
+            }
+
+            function submitAnswers() {
+                const radioButtons = document.querySelectorAll('input[type="radio"]');
+                for (let i = 0; i < radioButtons.length; i++) {
+                    //console.log(i)
+                    let radio = radioButtons[i];
+                    let value = radio.value;
+                    switch (radio.name) {
+                        case 'q1':
+                            appeal += getScore(value);
+                            break;
+                        case 'q2':
+                            describes += getScore(value);
+                            break;
+                        case 'q3':
+                            skills += getScore(value);
+                            break;
+                        case 'q4':
+                            culture += getScore(value);
+                            break;
+                        case 'q5':
+                            schedule += getScore(value);
+                            break;
+                        case 'q6':
+                            food += getScore(value);
+                            break;
+                        case 'q7':
+                            sauce += getScore(value);
+                            break;
+                    }
+                };
+
+                if (appeal == 1 || describes == 1) {
+                    //output font of house job
+                    console.log("Front of house");
+                } else if (appeal == 2 || describes == 2 || skills == 2) {
+                    //output back of house
+                    console.log("Back of house");
+                } else {
+                    //output team leader 
+                    console.log("Team leader");
+                    console.log(appeal);
                 }
             }
         </script>
