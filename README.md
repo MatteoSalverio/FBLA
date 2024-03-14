@@ -1,7 +1,7 @@
 # FBLA 2023-24 Website Coding &amp; Development Project by Matteo Salverio and Ryan Palmer
 
 # Author Information:
-**Name:** Matteo Salverio  
+**Names:** Matteo Salverio & Ryan Palmer
 **School:** Lakewood High School  
 **Grade Level:** 12th Grade  
 

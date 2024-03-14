@@ -11,6 +11,7 @@
     margin: 2%;
     text-align: center;
     margin: auto;
+    margin-bottom: 4vh;
 }
 
 .quadColumn img {
@@ -19,6 +20,6 @@
 
 .quadColumn content {
     color: var(--Dark-Gray);
-    font-size: 1.75vh;
+    font-size: 2vh;
     text-align: left;
 }
