@@ -14,7 +14,7 @@ function onScroll() {
     let diff = y - lastY;
     for (let i = 0; i < parallaxElements.length; i++) {
         let startPos = parallaxElements[i].style.backgroundPositionY.replace("vw", "") * 1;
-        parallaxElements[i].style.backgroundPositionY = `${startPos + (diff * 0.035)}vw`;
+        parallaxElements[i].style.backgroundPositionY = `${startPos + (diff * 0.025)}vw`;
     }
     lastY = y;
 }
